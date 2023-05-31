@@ -13,6 +13,7 @@ export class TaskParameters {
         this._azurePipelineName = core.getInput('azure-pipeline-name', { required: true });
         this._azureDevopsToken = core.getInput('azure-devops-token', { required: true });
         this._azurePipelineVariables = core.getInput('azure-pipeline-variables', { required: false });
+        this._azureSourceBranch = core.getInput('azure-pipeline-sourcebranch', { required: false });
     }
 
     public static getTaskParams() {

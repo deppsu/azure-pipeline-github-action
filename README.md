@@ -20,6 +20,7 @@ Action takes Project URL, pipeline name and a [Personal Access Token (PAT)](http
     azure-pipeline-name: 'pipeline-name' # name of the Azure pipeline to be triggered
     azure-devops-token: '${{ secrets.AZURE_DEVOPS_TOKEN }}'
     azure-pipeline-variables:  '{"variable1": "value1", "variable2": "value2"}' # optional stringified json
+    azure-pipeline-sourcebranch: 'sourcebranch' # the branch of the triggering repo the build was queued for
 ```
 
 # Contributing
