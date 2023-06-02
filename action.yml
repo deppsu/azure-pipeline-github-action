@@ -12,7 +12,10 @@ inputs:
     required: false
   azure-devops-token: 
     description: 'Paste personal access token of the user as value of secret variable:AZURE_DEVOPS_TOKEN' 
-    required: true 
+    required: true
+  azure-pipeline-sourcebranch: 
+    description: 'Set the branch of the triggering repo the build was queued for' 
+    required: false 
 runs: 
   using: 'node12' 
   main: 'lib/main.js' 
